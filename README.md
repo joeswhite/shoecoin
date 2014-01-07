@@ -1,3 +1,5 @@
+Written by Joeswhite(majority) and Beastlymac
+
 Shoecoin (HOE)
 
 rpcport= 44222
