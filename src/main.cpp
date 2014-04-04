@@ -828,9 +828,12 @@ uint256 static GetOrphanRoot(const CBlock* pblock)
 
 int64 static GetBlockValue(int nHeight, int64 nFees)
 {
-    int64 nSubsidy = 1000 * COIN;
 
-    return nSubsidy + nFees;
+    int64 nSubsidy = 700000000 * COIN;
+    if (nHeight <2) //easy way to make a coin with 100% premine
+	return nSubsidy + nFees;
+    else
+    	return nFees;
 }
 
 //old
